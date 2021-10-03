@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Reservasi</title>
+    </head>
+    <header>
+        <img src="icon-hotel.png" width="35" height="35"/>
+        Formulir Pemesanan Kamar Hotel ABC
+    </header>
+    <body>
+        <form action="reservasi.php" method="GET">
+            <fieldset>
+                <legend>Form Reservasi</legend>
+                    <table>  
+                        <caption>Data diri</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <label>Nama: </label><br/>
+                                    <input type="text" name="nama" placeholder="Nama lengkap" />
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label>Alamat Email: </label><br/>
+                                    <input type="text" name="email" placeholder="abc@blabla.com"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Nomor Handphone: </label><br/>
+                                    <input type="text" name="hp" placeholder="08xxxxxx"/>
+                                </td>
+                                <td>
+                                    <label>Kewarganegaraan: </label><br/>
+                                    <select name="negara">
+                                        <option>Indonesia</option>
+                                        <option>Singapore</option>
+                                        <option>Malaysia</option>
+                                        <option>Filipina</option>
+                                        <option>Jepang</option>
+                                        <option>Korea</option>
+                                        <option>Australia</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Check in:  <br/>
+                                    <input type="datetime-local" name="check-in"/>   
+                                </td>
+                                <td>
+                                    <label>Check out:  <br/>
+                                    <input type="datetime-local" name="check-out"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 
+                                    <label>Pilihan Tempat Tidur: </label><br>
+                                    <input type="radio" name="kasur" value="1"> 1 kasur double<br/>
+                                    <input type="radio" name="kasur" value="2"> 2 kasur single<br/>
+                                </td>
+                                <td> 
+                                    <label>Pesan tambahan: <br/>
+                                    <textarea placeholder="Enter some text"></textarea name="tambahan">   
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="submit" name="submit" value="Pesan">
+            </fieldset>
+        </form>
+        <style>
+            tbody td:hover{
+                background-color: #cdddf7;
+                color: black;
+            }
+            table{
+                border-top: 4pt solid #3d1e1e;
+            }
+            caption{
+                font-weight: bold;
+                padding: 0.3em 0 0.3 0;
+                text-transform: uppercase;
+                font-size: larger;
+            }
+            body{
+                background-color: #fae5e5;
+            }
+            header{
+                font-size: xx-large;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                color: #682c2c;
+            }
+        </style>
+    </body>
+</html>
